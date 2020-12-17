@@ -48,6 +48,12 @@ function Airplane(name) {
         for (let i=0;i<this.stomach.length;i++){
           this.stomach.push(someFood);
         }
+      },
+      poop: function(){
+        this.stomach=[];
+      },
+      toString: function(){
+        return `${personName}, ${personAge}`
       }
     }
     return humanBeing
